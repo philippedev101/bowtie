@@ -1,0 +1,40 @@
+name:                bowtie
+version:             0.1.0.0
+synopsis:            MTIE and TDEV analysis
+description:         bowtie ⋈ — a program to perform analysis on Time Interval Error (TIE)
+homepage:            https://github.com/philippedev101/bowtie
+license:             AGPLv3
+license-file:        LICENSE
+author:              philippedev101
+maintainer:          philippedev101@gmail.com
+copyright:           2017 philippedev101
+category:            Math
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable bowtie
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  other-modules:       Algos, Utils, Version
+  build-depends:       base >= 4.7 && < 5
+                     , ansi-wl-pprint
+                     , attoparsec
+                     , binary-conduit
+                     , bytestring
+                     , bytestring-show
+                     , Cabal
+                     , conduit
+                     , conduit-extra
+                     , containers
+                     , data-binary-ieee754
+                     , directory
+                     , double-conversion
+                     , extra
+                     , foldl
+                     , mtl
+                     , optparse-applicative
+                     , resourcet
+                     , template-haskell
+                     , text
+                     , vector
