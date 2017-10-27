@@ -20,6 +20,9 @@ Tektronix SJ300E SONET/SDH Jitter and Wander Analyzer accompanied software calle
 
 For further information on flags and input options, run bowtie with `--help` or consult the source code.
 
+## Running bowtie ##
+Make sure your terminal supports utf8. You can find your OS supported utf8 variants with `locale -a | grep utf`. Use this value for your `LC_*` environment variables. I'm not sure which `LC_*` variable should be set, but in any case setting `LC_ALL` should override them all and thus always works. If you don't want to set your environment to utf8 permanently you can start the program with `LC_ALL=en_US.utf8 ./bowtie --help`. Here the value `en_US.utf8` was used, but it could be as well `en_US.utf-8` (with a dash between `utf` and `8`) or anything similar to that (again please check `locale -a | grep utf`).
+
 ## Measurement devices ##
 These devices can be used to measure TIE values on SDH/SONET lines. There are a lot of other devices on the market that can perform these measurements as well. As the program input is just plain text format it should be really easy to make bowtie compatible with any device.
 
