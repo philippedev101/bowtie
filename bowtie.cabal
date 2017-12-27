@@ -16,7 +16,7 @@ executable bowtie
   hs-source-dirs:      src
   main-is:             Main.hs
   default-language:    Haskell2010
-  other-modules:       Algos, Utils, Version
+  other-modules:       Algos, Utils, Version, Paths_bowtie
   build-depends:       base >= 4.7 && < 5
                      , ansi-wl-pprint
                      , attoparsec

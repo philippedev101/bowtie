@@ -70,7 +70,6 @@ valid_mties_intervals_points st intervals veclen = assert (isSorted intervals) $
 tdevs9 :: Double -> Int -> VU.Vector Double -> [(X, Y)]
 tdevs9 sampleTime pointsPerDecade points = map formula points_list
   where ɴ = VU.length points
-        -- pointsPerDecade = 10
         sum_1_lower_bound = 1
 
         -- To increase the confidence in the estimate and to maximise the data utilisation Wallis and Allan [23] substitute N-3n+1 for N
